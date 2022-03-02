@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-bar-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-principal a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+.menu-principal a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.social-media {
+  padding-right: 80px;
+}
+
+.social-media a {
+  color: #000;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
