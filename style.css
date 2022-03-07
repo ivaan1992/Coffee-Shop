@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 header {
-  height: 9vh;
   width: 100%;
-  border: 2px solid red;
+  height: 10vh;
 }
 
 .logo {
@@ -21,13 +21,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 11vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 99;
+  position: fixed;
+  background-color: #fff;
 }
 
 .menu-principal a {
   margin-right: 20px;
   text-decoration: none;
   color: black;
-  font-family: 'Playfair Display', serif;
+  
   font-size: 20px;
 }
 
@@ -49,4 +55,113 @@ header {
 
 .social-media a:hover {
   color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  margin-top: 15px;
+}
+
+.portada {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 85vh;
+}
+
+.col {
+  width: 50%;
+  background-color: #141618;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+.foto {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.left {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+}
+
+.right {
+  display: flex;
+  margin-bottom: 20%;
+  height: 30vh;
+}
+
+.izq {
+  background-image: url('./Images/portada-1.jpg');
+  background-position-x: center;
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+}
+
+.der {
+  background-image: url('./Images/portada-4.jpg');
+  background-position-x: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  color: #fff;
+  width: 40%;
+  padding-left: 5%;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.titulo-portada {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.foto-full-izq {
+  background-image: url('./Images/portada-2.jpg');
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 49vw;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-full-der {
+  background-image: url('./Images/portada-3.jpg');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
