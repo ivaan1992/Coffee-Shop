@@ -503,3 +503,30 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #8b7545;
 }
+
+footer {
+  margin-top: 2.25rem;
+  background: #141618;
+  padding: 5.625rem 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.social-media-footer {
+  margin-top: 2.25rem;
+}
+
+.social-media-footer a {
+  padding: 0 0.5625rem;
+  color: #fff;
+  font-size: 1.250rem;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.social-media-footer a:hover {
+  color: #b4975a;
+}
