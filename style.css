@@ -367,6 +367,7 @@ main {
 }
 
 .datos {
+  width: 100%;
   padding: 5.625rem  11.875rem ;
   position: relative;
   background-image: url('./Images/contacto-bg.jpg');
@@ -412,3 +413,93 @@ main {
   color: #777; 
 }
 
+.formulario {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 40.625rem;
+  margin: 0 auto;
+  padding: 2.25rem;
+  margin-top: -3.250rem;
+  width: 90%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],[type="email"], 
+textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #303133;
+  width: 100%;
+  outline: none;
+  padding: 0.9375rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #b4975a;
+  vertical-align: top; 
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%;
+}
+
+label {
+  color: #777;
+  font-family: 'Poppins', sans-serif;
+}
+
+.label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.label-active {
+  top: -0.75rem;
+  margin-left: 0;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #777;
+}
+
+.error {
+  position: absolute;
+  color:rgb(255, 59, 59);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+}
+
+input[type="submit"] {
+  font-family: 'Poppins', sans-serif;
+  background: #b4975a;
+  color: #fff;
+  border-radius: 1px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #8b7545;
+}
