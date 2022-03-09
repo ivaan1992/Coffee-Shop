@@ -102,7 +102,6 @@ main {
   background-image: url('./Images/portada-1.jpg');
   background-position-x: center;
   width: 50%;
-
   display: flex;
   align-items: center;
 }
@@ -173,56 +172,148 @@ main {
 }
 
 .nosotros {
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  align-items: flex-start;
-  padding-left: 10%;
-  margin-top: 10%;
+  padding: 5.625rem;
 }
 
 .container-us {
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .col-izq {
-  width: 20%;
-  height: 30vh;
+  width: 30%;
+  border-right: 1px solid #eaeaea;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.col-izq p {
-  font-size: 20px;
-  color:#303133;
-}
-
-.col-izq h2 {
-  padding-left: 5%;
-  font-size: 50px;
-  font-style: italic;
+  align-items: center;
+  padding-right: 5%;
 }
 
 .col-der {
-  width: 20%;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-left: 1px solid #d3d3d3;
+  width: 70%;
+  padding-left: 5%;
 }
 
-.text {
+.text p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #777
+}
+
+.titulo-seccion h2 {
+  font-size: 3.125rem;
+  font-weight: 400;
+  line-height: 3.6875rem;
+  margin-bottom: 1.125rem;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.titulo-seccion p {
+  font-size: 1.25rem;
+  color: #777;
+}
+
+
+.chef {
+  background-color: #303133;
+  padding: 5.625rem;
+}
+
+.chef-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.column {
+  width: 50%;
+}
+
+.izq-chef {
+  box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.der-chef {
+  padding: 3.125rem;
+  padding-right: 0;
+}
+
+.der-chef h2 {
+  color: #fff;
+}
+
+.der-chef p {
+  color: rgba(255, 255, 255, 0.712);
+  padding-bottom: 1.125rem;
+  font-size: 1.125rem;
+}
+
+.last-par-chef {
+  padding-bottom: 0;
+}
+
+.slider {
+  width: 300%;
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+
+.foto1 {
+  background-image: url('./Images/chef-1.jpg');
+}
+
+.foto2 {
+  background-image: url('./Images/chef-2.jpg');
+}
+
+.foto3 {
+  background-image: url('./Images/chef-3.jpg');
+}
+
+.menu-platillos {
+  padding: 5.625rem; 
+}
+
+.menu-platillos h2 {
+  text-align: center
+}
+
+.contenedor-menu {
+  margin-top: 2.5rem;
+}
+
+.encabezado {
+  font-weight: 600;
+  font-family: font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
-  line-height: 30px;
-  text-align: justify;
-  padding-left: 20%;
-  font-size: 15px;
-  width: 45vw;
-  color:#303133;
-  height: 40vh;
 }
+
+.encabezado a {
+  text-decoration: none;
+  color: #141618;
+  font-size: 0.85rem;
+  padding: 0 1.4375rem 1.125rem 1.4375rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+}
+
+.encabezado a:hover {
+  color: #777;
+}
+
