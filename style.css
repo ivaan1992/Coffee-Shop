@@ -292,7 +292,7 @@ main {
 
 .encabezado {
   font-weight: 600;
-  font-family: font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   list-style: none;
@@ -303,17 +303,65 @@ main {
 .encabezado a {
   text-decoration: none;
   color: #141618;
-  font-size: 0.85rem;
+  font-size: 1.32rem;
   padding: 0 1.4375rem 1.125rem 1.4375rem;
   display: block;
   cursor: pointer;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-
 }
 
 .encabezado a:hover {
+  color: #b4975a;
+}
+
+.contenido {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  border: 6px double #eaeaea;
+  padding: 0 2.25rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.col-izq-menu {
+  width: 70%;
+}
+
+.col-izq-menu h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+
+}
+
+.col-izq-menu p {
+  font-size: 1rem;
   color: #777;
 }
 
+.col-der-menu {
+  width: 30%;
+  text-align: center;
+  font-size: 2.20rem;
+}
+
+.postres, .cafes {
+  display: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.active {
+  display: block;
+}
