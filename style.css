@@ -66,7 +66,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  height: 78vh;
+  height: 100vh;
 }
 
 .col {
@@ -75,7 +75,7 @@ main {
   color: #fff;
   display: flex;
   flex-wrap: wrap;
-  height: 70vh;
+  height: 80%;
 }
 
 .foto {
@@ -89,19 +89,20 @@ main {
 .left {
   display: flex;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
 }
 
 .right {
   display: flex;
   margin-bottom: 20%;
-  height: 30vh;
+  height: 50vh;
 }
 
 .izq {
   background-image: url('./Images/portada-1.jpg');
   background-position-x: center;
   width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -110,6 +111,7 @@ main {
   background-image: url('./Images/portada-4.jpg');
   background-position-x: center;
   width: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +139,7 @@ main {
 .foto-full-izq {
   background-image: url('./Images/portada-2.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 40%;
   margin-bottom: 40%;
   width: 100%;
   height: 40vh;
@@ -150,7 +152,7 @@ main {
   background-repeat: no-repeat;
   background-position-y: center;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
 }
@@ -368,7 +370,7 @@ main {
 
 .datos {
   width: 100%;
-  padding: 5.625rem  11.875rem ;
+  padding: 5.625rem 0 11.875rem;
   position: relative;
   background-image: url('./Images/contacto-bg.jpg');
   background-size: cover;
@@ -382,14 +384,19 @@ main {
   background-color: #14161842;
   top: 0;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .datos-container {
+  width: 100%;
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .blurb {
@@ -530,3 +537,157 @@ footer {
 .social-media-footer a:hover {
   color: #b4975a;
 }
+
+@media (max-width: 1250px) {
+  .left, .right {
+    width: 100%;
+  }
+
+  .foto {
+    width: 60%;
+  }
+
+  .texto {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-portada {
+    font-size: 1.125rem;
+  }
+}
+
+
+@media (max-width: 1199px) {
+  .foto {
+    display: none;
+  }
+
+
+  .texto {
+    width: 100%;
+  } 
+
+  .foto-full-izq {
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+
+  .foto-full-der {
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+    height: 50vh;
+    text-align: justify;
+    font-size: 0.625rem;
+  }
+}
+
+@media (min-width: 625px), (max-width: 850px) {
+  .menu-principal, .social-media {
+    display: none;
+  }
+
+  .col {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-full-izq {
+    display: none;
+  }
+
+
+
+  .nosotros {
+    display: flex;
+    padding: 0;
+  }
+
+  .container-us {
+    padding: 0;
+  }
+
+  .col-izq {
+    border-bottom: 1px solid #eaeaea;
+    border-right: none;
+    margin-bottom: 0.5287rem;
+  }
+
+  .col-der {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 15px;
+    display: flex;
+    text-align: justify;
+    padding: 1.1547rem;
+  }
+
+  .izq-chef {
+    width: 100%;
+  }
+
+  .der-chef {
+    width: 100%;
+  }
+}
+
+@media (max-width: 625px) {
+  .menu-principal, .social-media {
+    display: none;
+  }
+
+  .nosotros {
+    display: flex;
+    padding: 0;
+  }
+
+  .container-us {
+    padding: 0;
+  }
+
+  .col-izq {
+    border-bottom: 1px solid #eaeaea;
+    border-right: none;
+    margin-bottom: 0.5287rem;
+  }
+
+  .col-der {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 15px;
+    display: flex;
+    text-align: justify;
+    padding: 1.1547rem;
+  }
+
+  .izq-chef {
+    width: 100%;
+  }
+
+  .der-chef {
+    width: 100%;
+  }
+}
+
