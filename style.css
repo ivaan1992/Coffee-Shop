@@ -501,6 +501,8 @@ input[type="submit"] {
   margin-top: 3.125rem;
   padding: 0.9375rem;
   width: 20%;
+  font-weight: 800;
+  font-size: 1rem;
   outline: none;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -598,22 +600,33 @@ footer {
   }
 }
 
-@media (min-width: 625px), (max-width: 850px) {
+@media (max-width: 850px) {
   .menu-principal, .social-media {
     display: none;
   }
 
-  .col {
-    width: 100%;
-    height: 30vh;
+  .portada {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .col {
+    width: 100%;
+    height: 50%;
   }
 
   .foto-full-izq {
     display: none;
   }
 
+  .titulo-portada {
+    font-size: 2rem;
+  }
+  .texto {
+    font-size: 15px;
+  }
 
 
   .nosotros {
@@ -644,50 +657,183 @@ footer {
 
   .izq-chef {
     width: 100%;
+    min-height: 70vh;
   }
 
   .der-chef {
     width: 100%;
   }
-}
 
-@media (max-width: 625px) {
-  .menu-principal, .social-media {
-    display: none;
+  .datos-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5.625rem
   }
 
-  .nosotros {
-    display: flex;
+  .blurb {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 580px) {
+  header {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .logo img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .container-us {
+    width: 100%;
+    height: 150vh;
+  }
+
+  .text p {
+    font-size: 1rem ;
+  }
+
+  .chef {
+    padding: 1.625rem;
+  }
+
+  .col-izq-menu {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .col-der-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item h3 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+  }
+
+  .menu-platillos {
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .blurb {
+    width: 13rem;
+    margin-bottom: 10%;
+  }
+
+  .datos-container { 
+    flex-direction: column;
     padding: 0;
   }
 
   .container-us {
-    padding: 0;
-  }
-
-  .col-izq {
-    border-bottom: 1px solid #eaeaea;
-    border-right: none;
-    margin-bottom: 0.5287rem;
-  }
-
-  .col-der {
     width: 100%;
+    height: 100%;
   }
 
-  .text {
-    font-size: 15px;
-    display: flex;
-    text-align: justify;
-    padding: 1.1547rem;
+  .text p {
+    font-size: 10px ;
   }
 
-  .izq-chef {
-    width: 100%;
+  .titulo-seccion h2 {
+    font-size: 2rem;
   }
 
-  .der-chef {
-    width: 100%;
+  .titulo-seccion p {
+    font-size: 0.85rem;
   }
 }
+
+@media (max-width: 280px) {
+  header {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .logo img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 2rem;
+  }
+
+  .titulo-seccion p {
+    font-size: 1rem;
+  }
+
+  .container-us {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text p {
+    font-size: 10px ;
+  }
+
+  .chef {
+    padding: 1.625rem;
+  }
+
+  .col-izq-menu {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .col-der-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .item h3 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+  }
+
+  .titulo-portada {
+    font-size: 20px;
+  }
+
+  .titulo-seccion p {
+    font-size: 10px;
+  }
+
+  .texto p {
+    font-size: 8px;
+  }
+
+  .menu-platillos {
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .blurb {
+    width: 13rem;
+    margin-bottom: 10%;
+  }
+
+  .datos-container { 
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+
 
