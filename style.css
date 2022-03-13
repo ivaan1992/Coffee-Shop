@@ -393,7 +393,6 @@ main {
 
 .encabezado {
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   list-style: none;
@@ -402,8 +401,9 @@ main {
 }
 
 .encabezado a {
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: #141618;
+  color: #777;
   font-size: 1.32rem;
   padding: 0 1.4375rem 1.125rem 1.4375rem;
   display: block;
@@ -456,16 +456,20 @@ main {
   font-size: 2.20rem;
 }
 
-.postres, .cafes {
+.postres, 
+  .cafes {
   display: none;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
+
 .active {
   display: block;
+  border-bottom: 5px solid #b4975a;  
 }
+
 
 .datos {
   width: 100%;
