@@ -1,101 +1,46 @@
 let propTabs = {
-  firstHeader:
-    document.getElementById('menu-header').firstElementChild,
-  firstContent:
-    document.getElementById('menu-content').firstElementChild,
-  headerLinks:
-    document.querySelectorAll('#menu-header li a'),
-  headerList:
-  document.querySelectorAll('#menu-header li'),
-  divsContent:
-  document.querySelectorAll('#menu-content >div'),
-  contentActive:
-  null,
+  first_header: document.getElementById('links-header-menu').firstElementChild,
+  first_content: document.getElementById('menu-coffee-content').firstElementChild,
+  header_links: document.querySelectorAll('#links-header-menu li a'),
+  li_header: document.querySelectorAll('#links-header-menu li'),
+  divs_content: document.querySelectorAll('#menu-coffee-content div'),
+  content_active: null,
 }
 
 let metTabs = {
+  start: function() {
+    propTabs.first_header.className = 'active';
+    for(let i=0; i<propTabs.header_links.length; i++) {
+      propTabs.header_links[i].addEventListener('click', metTabs.event);
+    }
+  },
 
-    start:
-      function() {
-        propTabs.firstHeader.className = 'active';
-        propTabs.firstContent.className = 'active';
+  event: function(e) {
+    e.preventDefault();
+    deleteAllActivesAndAddActiveToElement(e.target.parentElement)
+    
+    const reference = e.target.getAttribute('href')
+    const desserts = document.querySelector("#desserts")
+    const drinks = document.querySelector("#drinks")
+    
+    if(reference == "#drinks") {
+      addHideClassAndRemove(desserts, drinks)
+      return 
+    }
+    addHideClassAndRemove(drinks, desserts)
 
-        for(let i=0; i<propTabs.headerLinks.length; i++) {
-            propTabs.headerLinks[i].addEventListener('click', metTabs.changeMenu)
-        }
-    },
+  }
+}
 
-    changeMenu:
-      function(e) {
-         e.preventDefault();
-         for(let i =0; i <propTabs.headerList.length; i++) {
-             propTabs.headerList[i].className = '';
-         }
+function deleteAllActivesAndAddActiveToElement(element) {
+  document.querySelectorAll('.active').forEach(activeElement => activeElement.classList.remove('active'))
 
-         for(let i =0; i <propTabs.divsContent.length; i++) {
-            propTabs.divsContent[i].className = 'postres cafes';
-        }
+  element.classList.add('active')
+}
 
-        this.parentElement.className = 'active';
-        propTabs.contentActive = this.getAttribute('href');
-        document.querySelector(propTabs.contentActive).className = 'active';
-      }
-
+function addHideClassAndRemove(element, secondElement) {
+  element.classList.add('hide')
+  secondElement.classList.remove('hide')
 }
 
 metTabs.start();
-
-
-
-
-
-
-
-
-/*  
-
-let propTabs = {
-    firstHeader:
-    document.getElementById('encabezado-menu').firstElementChild,
-    firstContent:
-    document.getElementById('contenido-menu').firstElementChild,
-    headerLinks:
-    document.querySelectorAll('#encabezado-menu li a'),
-    headerList:
-    document.querySelectorAll('#encabezado-menu li'),
-    divsContent:
-    document.querySelectorAll('#contenido-menu > div'),
-}
-
-let metTabs = {
-  start:
-    function() {
-      propTabs.firstHeader.className = '';
-      propTabs.firstContent.className = '';
-
-      for(let i=0; i < propTabs.headerLinks.length; i++) {
-          propTabs.headerLinks[i].addEventListener('click', metTabs.changeMenu);
-      }
-  },
-
-  changeMenu:
-    function(e) {
-      e.preventDefault(e);
-
-      for(let i = 0; i < propTabs.headerList.length; i++) {
-          propTabs.headerList[i].className = '';
-      }
-
-      for(let i = 0; i < propTabs.divsContent.length; i++) {
-        propTabs.divsContent[i].className = '';
-    }
-
-      this.parentElement.className = 'active';
-      propTabs.contentActive = this.getAttribute('href');
-      document.querySelector(propTabs.contentActive).className = 'active'; 
-    },
-
-
-}
-
-metTabs.start();  */
