@@ -1,8 +1,8 @@
-# Coffee Shop
+# Coffee Shop ☕ 🍰
 
-This is an app that shows all the Rick & Morty characters. You can search them by name or episode. 
+This is a web page that I've create to learn better JavaScript.
 
-The purpose of this project is show you everything that I've learned in React and Redux module. 
+This is a dinamic menu of a coffee shop! 
 
 ## Screenshot 🎞️
 ![Captura de pantalla de 2022-04-15 12-54-21](https://user-images.githubusercontent.com/73128809/163604982-082570be-34c7-4d88-9d26-fb5d91f12f3c.png)
@@ -10,9 +10,9 @@ The purpose of this project is show you everything that I've learned in React an
  
 ##  🛠️ Built With ⚒️
 
+- Html
 - Css
-- React
-- Redux
+- JavaScript
  
 ##  💻Live Demo
 
